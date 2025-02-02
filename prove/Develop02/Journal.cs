@@ -44,13 +44,12 @@ public class Journal
 
         try
         {
-        using (StreamWriter writer = new StreamWriter(fileName + ".txt", append: true))
-        {
-            
-            var lastEntry = entries[entries.Count - 1];  
-            writer.WriteLine($"{lastEntry.Date.ToShortDateString()}|{lastEntry.Prompt.Text}|{lastEntry.EntryText}");
-        }
-        Console.WriteLine($"Journal entry saved to {fileName}.txt");
+            using (StreamWriter writer = new StreamWriter(fileName + ".txt", append: true))
+            {
+                var lastEntry = entries[entries.Count - 1];  
+                writer.WriteLine($"{lastEntry.Date.ToShortDateString()}|{lastEntry.Prompt.Text}|{lastEntry.EntryText}");
+            }
+            Console.WriteLine($"Journal entry saved to {fileName}.txt");
         }
         catch (Exception ex)
         {
