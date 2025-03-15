@@ -1,0 +1,3 @@
+SimpleGoal|Clean Bathroom|clean toilet, sink, mirror, tub, floor|200|True
+EternalGoal|Study Scriptures|read a chapter a day|50
+ChecklistGoal|Marathon|run two marathons this year|300|0|2|600
